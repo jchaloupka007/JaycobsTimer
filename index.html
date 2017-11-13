@@ -1,0 +1,73 @@
+<!doctype html>
+
+	<!-- Created By Jakub Chaloupka, Helped by: 
+	Andres Morales (Scrambling algorithm): https://stackoverflow.com/users/422765/andr%C3%A9s-morales
+	Pham Trung Thanh (Delta Timer): https://stackoverflow.com/users/8831057/ph%E1%BA%A1m-trung-th%C3%A0nh
+
+	WCA ID: 2016CHAL01 -->
+
+<html lang="en">
+	<head>
+		<title>Jaycob's Timer</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300">
+		<link rel="icon" href="icon\icon.png">
+
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	</head>
+	<body>
+		<nav id="nav-main">
+			<div class="logo">Jaycob's Timer</div>
+			<div id="Scramble" onclick="copy()">Scramble: </div><a id="button" onclick="generateScramble()">New Scramble</a></div>	
+		</nav>
+			<div class="sidebar">
+				<p class="accordion"><span id="accordionButton">3 x 3</span></p>
+				<div class="panel">
+					<ul>
+						<li onclick="toggle(2)">2 x 2</li>
+						<li onclick="toggle(3)">3 x 3</li>
+						<li onclick="toggle(4)">4 x 4</li>
+						<li onclick="toggle(5)">5 x 5</li>
+						<li onclick="toggle(6)">6 x 6</li>
+						<li onclick="toggle(7)">7 x 7</li>
+						<li onclick="toggle(8)">Megaminx</li>
+						<li onclick="toggle(9)">Pyraminx</li>
+						<li onclick="toggle(10)">Skewb</li>
+						<li onclick="toggle(11)">Square-1</li>
+						<li onclick="toggle(12)">3 x 3 OH</li>
+						<li onclick="toggle(13)">3 x 3 BLD</li>
+					</ul>
+				</div>
+				<button class="sidebar_button">Statistics</button>
+				<div class="statistics">
+					<ul>
+						<li id="best_time">Best Time:</li>
+						<li id="current_time">Current Time: </li><br />
+						<li id="best_ao5">Best Ao5: </li>
+						<li id="current_ao5">Current Ao5: </li><br />
+					</ul>
+				</div>
+				<button class="sidebar_button"><span id="TimeCount">Time List - 0 solves</span></button>
+				<div id="time_list">
+					<div id="Times">
+					</div>
+				</div>
+
+			</div>
+		<div id="content">
+			<p>
+				<h1 id="counter">00:00.00</h1>
+					<h6 id="Ao5">Ao5: </h6>
+			</p>
+		</div>
+
+		<script src="js/script.js"></script>
+		<script src="js/sidebar.js"></script>	
+	</body>
+</html>
