@@ -1,2 +1,2 @@
-# JaycobsTimer
-A rubik's cube timer for all WCA events.
+# Jaycob's Timer
+A Rubik's cube timer for all WCA events.
